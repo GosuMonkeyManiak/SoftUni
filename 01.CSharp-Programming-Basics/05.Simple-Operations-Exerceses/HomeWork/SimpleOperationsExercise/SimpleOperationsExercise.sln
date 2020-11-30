@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29905.134
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FromUSBToBGN", "FromUSBToBGN\FromUSBToBGN.csproj", "{BB716E7E-D34F-4378-AF68-55214DC69A2D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FromRadiansToDegrees", "FromRadiansToDegrees\FromRadiansToDegrees.csproj", "{B7E33FC5-2501-49C4-8B89-78B507F6D03D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2DRectangleArea", "2DRectangleArea\2DRectangleArea.csproj", "{0BDCA161-BEEB-4236-B01B-F40EADBCF1C4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TailoringWorkshop", "TailoringWorkshop\TailoringWorkshop.csproj", "{B518E78C-7448-4DBB-A258-B3A14F0E91F6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DanceHall", "DanceHall\DanceHall.csproj", "{32555E37-C003-45E5-B3BC-E8859C9DF4AA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CharityCampaign", "CharityCampaign\CharityCampaign.csproj", "{60648C9A-C04A-439E-8E9E-14E4354EB097}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BB716E7E-D34F-4378-AF68-55214DC69A2D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BB716E7E-D34F-4378-AF68-55214DC69A2D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BB716E7E-D34F-4378-AF68-55214DC69A2D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BB716E7E-D34F-4378-AF68-55214DC69A2D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B7E33FC5-2501-49C4-8B89-78B507F6D03D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B7E33FC5-2501-49C4-8B89-78B507F6D03D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B7E33FC5-2501-49C4-8B89-78B507F6D03D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B7E33FC5-2501-49C4-8B89-78B507F6D03D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0BDCA161-BEEB-4236-B01B-F40EADBCF1C4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0BDCA161-BEEB-4236-B01B-F40EADBCF1C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0BDCA161-BEEB-4236-B01B-F40EADBCF1C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0BDCA161-BEEB-4236-B01B-F40EADBCF1C4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B518E78C-7448-4DBB-A258-B3A14F0E91F6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B518E78C-7448-4DBB-A258-B3A14F0E91F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B518E78C-7448-4DBB-A258-B3A14F0E91F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B518E78C-7448-4DBB-A258-B3A14F0E91F6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{32555E37-C003-45E5-B3BC-E8859C9DF4AA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{32555E37-C003-45E5-B3BC-E8859C9DF4AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{32555E37-C003-45E5-B3BC-E8859C9DF4AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{32555E37-C003-45E5-B3BC-E8859C9DF4AA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{60648C9A-C04A-439E-8E9E-14E4354EB097}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{60648C9A-C04A-439E-8E9E-14E4354EB097}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{60648C9A-C04A-439E-8E9E-14E4354EB097}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{60648C9A-C04A-439E-8E9E-14E4354EB097}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1676A5D1-31BC-4616-9D45-437445E2E157}
+	EndGlobalSection
+EndGlobal

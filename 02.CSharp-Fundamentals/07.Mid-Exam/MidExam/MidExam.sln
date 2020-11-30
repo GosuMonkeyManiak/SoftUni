@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30621.155
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NextLevel", "NextLevel\NextLevel.csproj", "{EED81C6C-DCD5-4B6D-A2B9-332537C5362E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Crafting", "Crafting\Crafting.csproj", "{7DCC91EA-95EE-4E8D-AC4C-9142413135E1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MagicCards", "MagicCards\MagicCards.csproj", "{02DE30A2-20E1-4CB1-943D-30090790FBCF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EED81C6C-DCD5-4B6D-A2B9-332537C5362E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EED81C6C-DCD5-4B6D-A2B9-332537C5362E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EED81C6C-DCD5-4B6D-A2B9-332537C5362E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EED81C6C-DCD5-4B6D-A2B9-332537C5362E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7DCC91EA-95EE-4E8D-AC4C-9142413135E1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7DCC91EA-95EE-4E8D-AC4C-9142413135E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7DCC91EA-95EE-4E8D-AC4C-9142413135E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7DCC91EA-95EE-4E8D-AC4C-9142413135E1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{02DE30A2-20E1-4CB1-943D-30090790FBCF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{02DE30A2-20E1-4CB1-943D-30090790FBCF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{02DE30A2-20E1-4CB1-943D-30090790FBCF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{02DE30A2-20E1-4CB1-943D-30090790FBCF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {683FC60D-01A5-4026-B4C9-3918A916CB46}
+	EndGlobalSection
+EndGlobal
