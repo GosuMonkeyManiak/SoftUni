@@ -5,17 +5,19 @@ VisualStudioVersion = 16.0.30717.126
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ValidUsernames", "ValidUsernames\ValidUsernames.csproj", "{81D01A40-7ADF-48F3-A3A3-41442C5ECD23}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CharacterMultiplier", "CharacterMultiplier\CharacterMultiplier.csproj", "{EA9DEE83-374C-4DBD-882A-B1462B63CD45}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CharacterMultiplier", "CharacterMultiplier\CharacterMultiplier.csproj", "{EA9DEE83-374C-4DBD-882A-B1462B63CD45}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExtractFile", "ExtractFile\ExtractFile.csproj", "{1BB4DBCF-C439-43DD-9DE6-F32CC15C751E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExtractFile", "ExtractFile\ExtractFile.csproj", "{1BB4DBCF-C439-43DD-9DE6-F32CC15C751E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CaesarCipher", "CaesarCipher\CaesarCipher.csproj", "{E9CCE967-8EC7-4C78-8EE8-2EF2E87DE22C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CaesarCipher", "CaesarCipher\CaesarCipher.csproj", "{E9CCE967-8EC7-4C78-8EE8-2EF2E87DE22C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MultiplyBigNumber", "MultiplyBigNumber\MultiplyBigNumber.csproj", "{AE6FA323-E62D-40D1-98EC-D6FFA107A9E8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MultiplyBigNumber", "MultiplyBigNumber\MultiplyBigNumber.csproj", "{AE6FA323-E62D-40D1-98EC-D6FFA107A9E8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StringExplosion", "StringExplosion\StringExplosion.csproj", "{E6E0CEB2-5260-4EEC-A718-A378EF846A47}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StringExplosion", "StringExplosion\StringExplosion.csproj", "{E6E0CEB2-5260-4EEC-A718-A378EF846A47}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReplaceRepeatingChars", "ReplaceRepeatingChars\ReplaceRepeatingChars.csproj", "{6E0D1E6C-B6B8-4227-AE30-3A359CA79B0D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ReplaceRepeatingChars", "ReplaceRepeatingChars\ReplaceRepeatingChars.csproj", "{6E0D1E6C-B6B8-4227-AE30-3A359CA79B0D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LettersChangeNumbers", "LettersChangeNumbers\LettersChangeNumbers.csproj", "{9894C68E-844F-4C57-B7E8-36F3A03FB9DE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,6 +53,10 @@ Global
 		{6E0D1E6C-B6B8-4227-AE30-3A359CA79B0D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6E0D1E6C-B6B8-4227-AE30-3A359CA79B0D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6E0D1E6C-B6B8-4227-AE30-3A359CA79B0D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9894C68E-844F-4C57-B7E8-36F3A03FB9DE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9894C68E-844F-4C57-B7E8-36F3A03FB9DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9894C68E-844F-4C57-B7E8-36F3A03FB9DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9894C68E-844F-4C57-B7E8-36F3A03FB9DE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
