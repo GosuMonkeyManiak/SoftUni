@@ -19,9 +19,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TruckTour", "TruckTour\Truc
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BalancedParantheses", "BalancedParantheses\BalancedParantheses.csproj", "{5FE24001-26FF-49A7-A2F8-7580EC8198A8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleTextEditor", "SimpleTextEditor\SimpleTextEditor.csproj", "{66EEA35E-E7D2-4DAE-899D-A7D86EC39700}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SimpleTextEditor", "SimpleTextEditor\SimpleTextEditor.csproj", "{66EEA35E-E7D2-4DAE-899D-A7D86EC39700}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Crossroads", "Crossroads\Crossroads.csproj", "{2A238B1D-44B9-4A8B-BFC1-808604D9500F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Crossroads", "Crossroads\Crossroads.csproj", "{2A238B1D-44B9-4A8B-BFC1-808604D9500F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KeyRevolver", "KeyRevolver\KeyRevolver.csproj", "{0CBA8CF8-09CB-49B7-9CA3-104951887374}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CupsAndBottles", "CupsAndBottles\CupsAndBottles.csproj", "{F88CF71B-B3F0-4002-91C5-D647FAD3C1E0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -69,6 +73,14 @@ Global
 		{2A238B1D-44B9-4A8B-BFC1-808604D9500F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2A238B1D-44B9-4A8B-BFC1-808604D9500F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2A238B1D-44B9-4A8B-BFC1-808604D9500F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0CBA8CF8-09CB-49B7-9CA3-104951887374}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0CBA8CF8-09CB-49B7-9CA3-104951887374}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0CBA8CF8-09CB-49B7-9CA3-104951887374}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0CBA8CF8-09CB-49B7-9CA3-104951887374}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F88CF71B-B3F0-4002-91C5-D647FAD3C1E0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F88CF71B-B3F0-4002-91C5-D647FAD3C1E0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F88CF71B-B3F0-4002-91C5-D647FAD3C1E0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F88CF71B-B3F0-4002-91C5-D647FAD3C1E0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

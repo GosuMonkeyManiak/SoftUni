@@ -27,7 +27,7 @@ namespace Crossroads
                 {
                     string currentCar = trafficJam.Peek();
 
-                    for (int i = 0; i < greenDuration; i++)
+                    for (int i = 0; i < greenDuration; i++) //green light
                     {
                         currentCar = currentCar.Remove(0, 1);
 
@@ -36,7 +36,7 @@ namespace Crossroads
                             trafficJam.Dequeue();
                             totalCarsPassed++;
 
-                            if (trafficJam.Count > 0)
+                            if (trafficJam.Count > 0 && i != greenDuration - 1)
                             {
                                 currentCar = trafficJam.Peek();
                             }
@@ -48,7 +48,7 @@ namespace Crossroads
                         }
 
                     }
-
+                    
                     for (int i = 0; i < freeWindow; i++)
                     {
                         if (i == 0 && currentCar.Length == 0)
@@ -64,16 +64,14 @@ namespace Crossroads
                             totalCarsPassed++;
                             break;
                         }
-
-                        if (i == freeWindow - 1 && currentCar.Length > 0)
-                        {
-                            Console.WriteLine("A crash happened!");
-                            Console.WriteLine($"{trafficJam.Peek()} was hit at {currentCar[0]}.");
-                            return;
-                        }
-
                     }
 
+                    if (currentCar.Length > 0)
+                    {
+                        Console.WriteLine("A crash happened!");
+                        Console.WriteLine($"{trafficJam.Peek()} was hit at {currentCar[0]}.");
+                        return;
+                    }
                 }
                 else
                 {
