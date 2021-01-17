@@ -3,13 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30804.86
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DiagonalDifference", "DiagonalDifference\DiagonalDifference.csproj", "{7754D37B-6CAB-47F2-A7AF-172D396723B2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DiagonalDifference", "DiagonalDifference\DiagonalDifference.csproj", "{7754D37B-6CAB-47F2-A7AF-172D396723B2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SquaresInMatrix", "SquaresInMatrix\SquaresInMatrix.csproj", "{A56632B1-2B8F-484A-84CA-B96952F11AAE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SquaresInMatrix", "SquaresInMatrix\SquaresInMatrix.csproj", "{A56632B1-2B8F-484A-84CA-B96952F11AAE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MaximalSum", "MaximalSum\MaximalSum.csproj", "{FEA8AFC8-0260-4BB6-B21A-37841473EFE4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MaximalSum", "MaximalSum\MaximalSum.csproj", "{FEA8AFC8-0260-4BB6-B21A-37841473EFE4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MatrixShuffling", "MatrixShuffling\MatrixShuffling.csproj", "{2C0D119A-CEAE-47A1-93B2-01A2F1CD3148}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MatrixShuffling", "MatrixShuffling\MatrixShuffling.csproj", "{2C0D119A-CEAE-47A1-93B2-01A2F1CD3148}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SnakeMoves", "SnakeMoves\SnakeMoves.csproj", "{A6B28B76-3F01-408B-B813-111C265B4A55}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{2C0D119A-CEAE-47A1-93B2-01A2F1CD3148}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2C0D119A-CEAE-47A1-93B2-01A2F1CD3148}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2C0D119A-CEAE-47A1-93B2-01A2F1CD3148}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A6B28B76-3F01-408B-B813-111C265B4A55}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A6B28B76-3F01-408B-B813-111C265B4A55}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A6B28B76-3F01-408B-B813-111C265B4A55}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A6B28B76-3F01-408B-B813-111C265B4A55}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
