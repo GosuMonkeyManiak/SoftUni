@@ -11,7 +11,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MaximalSum", "MaximalSum\Ma
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MatrixShuffling", "MatrixShuffling\MatrixShuffling.csproj", "{2C0D119A-CEAE-47A1-93B2-01A2F1CD3148}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SnakeMoves", "SnakeMoves\SnakeMoves.csproj", "{A6B28B76-3F01-408B-B813-111C265B4A55}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SnakeMoves", "SnakeMoves\SnakeMoves.csproj", "{A6B28B76-3F01-408B-B813-111C265B4A55}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JaggedArrayManipulator", "JaggedArrayManipulator\JaggedArrayManipulator.csproj", "{B3AE40C4-B2B7-4042-94D1-77DB0A018CD2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KnightGame", "KnightGame\KnightGame.csproj", "{70A46BF1-8094-41A2-A132-318950CFBE02}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +43,14 @@ Global
 		{A6B28B76-3F01-408B-B813-111C265B4A55}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A6B28B76-3F01-408B-B813-111C265B4A55}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A6B28B76-3F01-408B-B813-111C265B4A55}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B3AE40C4-B2B7-4042-94D1-77DB0A018CD2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B3AE40C4-B2B7-4042-94D1-77DB0A018CD2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B3AE40C4-B2B7-4042-94D1-77DB0A018CD2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B3AE40C4-B2B7-4042-94D1-77DB0A018CD2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{70A46BF1-8094-41A2-A132-318950CFBE02}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{70A46BF1-8094-41A2-A132-318950CFBE02}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{70A46BF1-8094-41A2-A132-318950CFBE02}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{70A46BF1-8094-41A2-A132-318950CFBE02}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
