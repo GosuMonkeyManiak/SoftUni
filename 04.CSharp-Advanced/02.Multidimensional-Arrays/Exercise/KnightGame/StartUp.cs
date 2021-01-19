@@ -9,283 +9,105 @@ namespace KnightGame
         {
             int n = int.Parse(Console.ReadLine());
 
-            string[,] matrix = new string[n, n];
+            char[,] board = new char[n, n];
 
             for (int row = 0; row < n; row++)
             {
-                string elements = Console.ReadLine().ToUpper();
+                string elements = Console.ReadLine();
                 for (int col = 0; col < n; col++)
                 {
-                    matrix[row, col] = elements[col].ToString();
+                    board[row, col] = elements[col];
                 }
             }
 
-            int needToRemove = 0;
+            int replace = 0;
+            int killerRow = 0;
+            int killerCol = 0;
 
-            for (int row = 0; row < n; row++)
+            while (true)
             {
+                int maxAttack = 0;
 
-                for (int col = 0; col < n; col++)
+                for (int row = 0; row < n; row++)
                 {
-                    if (matrix[row, col] == "K")
+                    for (int col = 0; col < n; col++)
                     {
-                        List<string> HorizontalPatters = HorizontalPatter(n, row, col); //for one position
-                        List<string> VerticalPatters = VerticalPatter(n, row, col); //for one position
-
-                        if (HorizontalPatters.Count == 1 && HorizontalPatters[0] == "all")
+                        if (board[row, col] == 'K')
                         {
-                            needToRemove += RemoveAll(matrix, row, col, "horizon");
+                            int currentAttack = GetAttack(row, col, board, n);
+
+                            if (currentAttack > maxAttack)
+                            {
+                                maxAttack = currentAttack;
+                                killerRow = row;
+                                killerCol = col;
+                            }
                         }
-                        else
-                        {
-                            needToRemove += RemoveSpecific(matrix, row, col, "horizon", HorizontalPatters);
-                        }
-
-                        if (VerticalPatters.Count == 1 && VerticalPatters[0] == "all")
-                        {
-                            needToRemove += RemoveAll(matrix, row, col, "vertical");
-                        }
-                        else
-                        {
-                            needToRemove += RemoveSpecific(matrix, row, col, "vertical", VerticalPatters);
-                        }
-
-                        HorizontalPatters.Clear();
-                        VerticalPatters.Clear();
-                    }
-                }
-            }
-
-
-
-            Console.WriteLine(needToRemove);
-
-        }
-
-        static int RemoveSpecific(string[,] matrix, int row, int col, string patter, List<string> available)
-        {
-            int removed = 0;
-
-            if (patter == "horizon")
-            {
-                for (int i = 0; i < available.Count; i++)
-                {
-                    switch (available[i])
-                    {
-                        case "rightUp":
-                            if (matrix[row - 1, col + 2] == "K") //rightUp
-                            {
-                                removed++;
-                                matrix[row - 1, col + 2] = "0";
-                            }
-                            break;
-
-                        case "rightDown":
-                            if (matrix[row + 1, col + 2] == "K") //rightDown
-                            {
-                                removed++;
-                                matrix[row + 1, col + 2] = "0";
-                            }
-                            break;
-
-                        case "leftUp":
-                            if (matrix[row - 1, col - 2] == "K") //leftUp
-                            {
-                                removed++;
-                                matrix[row - 1, col - 2] = "0";
-                            }
-                            break;
-
-                        case "leftDown":
-                            if (matrix[row + 1, col - 2] == "K") //leftDown
-                            {
-                                removed++;
-                                matrix[row + 1, col - 2] = "0";
-                            }
-                            break;
-                    }
-                }
-            }
-            else //vertical
-            {
-                for (int i = 0; i < available.Count; i++)
-                {
-                    switch (available[i])
-                    {
-                        case "UpRight":
-                            if (matrix[row - 2, col + 1] == "K") //UpRight
-                            {
-                                removed++;
-                                matrix[row - 2, col + 1] = "0";
-                            }
-                            break;
-
-                        case "UpLeft":
-                            if (matrix[row - 2, col - 1] == "K") //UpLeft
-                            {
-                                removed++;
-                                matrix[row - 2, col - 1] = "0";
-                            }
-                            break;
-
-                        case "DownRight":
-                            if (matrix[row + 2, col + 1] == "K") //DownRight
-                            {
-                                removed++;
-                                matrix[row + 2, col + 1] = "0";
-                            }
-                            break;
-
-                        case "DownLeft":
-                            if (matrix[row + 2, col - 1] == "K") //DownLeft
-                            {
-                                removed++;
-                                matrix[row + 2, col - 1] = "0";
-                            }
-                            break;
                     }
                 }
 
+
+                if (maxAttack > 0)
+                {
+                    board[killerRow, killerCol] = '0';
+                    replace++;
+                }
+                else
+                {
+                    Console.WriteLine(replace);
+                    break;
+                }
             }
 
-            return removed;
+
+
         }
 
-        static int RemoveAll(string[,] matrix, int row, int col, string patter)
+        static int GetAttack(int row, int col, char[,] board, int n)
         {
-            int removed = 0;
+            int attack = 0;
 
-            if (patter == "horizon")
+            if (((row - 2 >= 0 && row - 2 < n) && (col + 1 >= 0 && col + 1 < n)) && board[row - 2, col + 1] == 'K')
             {
-                if (matrix[row - 1, col + 2] == "K") //rightUp
-                {
-                    removed++;
-                    matrix[row - 1, col + 2] = "0";
-                }
-                if (matrix[row + 1, col + 2] == "K") //rightDown
-                {
-                    removed++;
-                    matrix[row + 1, col + 2] = "0";
-                }
-                if (matrix[row - 1, col - 2] == "K") //leftUp
-                {
-                    removed++;
-                    matrix[row - 1, col - 2] = "0";
-                }
-                if (matrix[row + 1, col - 2] == "K") //leftDown
-                {
-                    removed++;
-                    matrix[row + 1, col - 2] = "0";
-                }
-            }
-            else //vertical
-            {
-                if (matrix[row - 2, col + 1] == "K") //UpRight
-                {
-                    removed++;
-                    matrix[row - 2, col + 1] = "0";
-                }
-                if (matrix[row - 2, col - 1] == "K") //UpLeft
-                {
-                    removed++;
-                    matrix[row - 2, col - 1] = "0";
-                }
-
-                if (matrix[row + 2, col + 1] == "K") //DownRight
-                {
-                    removed++;
-                    matrix[row - 2, col - 1] = "0";
-                }
-                if (matrix[row + 2, col - 1] == "K") //DownLeft
-                {
-                    removed++;
-                    matrix[row + 2, col - 1] = "0";
-                }
+                attack++;
             }
 
-            return removed;
-        }
-
-        static List<string> HorizontalPatter(int n, int row, int col) // for one position
-        {
-            List<string> whichIsCorrect = new List<string>();
-
-            bool rightCaseUp = (col + 2 >= 0 && col + 2 < n) &&
-                               (row - 1 >= 0 && row - 1 < n);
-
-            bool rightCaseDown = (col + 2 >= 0 && col + 2 < n) &&
-                                 (row + 1 >= 0 && row + 1 < n);
-
-            bool leftCaseUp = (col - 2 >= 0 && col - 2 < n) &&
-                              (row - 1 >= 0 && row - 1 < n);
-
-            bool leftCaseDown = (col - 2 >= 0 && col - 2 < n) &&
-                                (row + 1 >= 0 && row + 1 < n);
-
-            if (rightCaseUp && rightCaseDown && leftCaseUp && leftCaseDown)
+            if (((row - 2 >= 0 && row - 2 < n) && (col - 1 >= 0 && col - 1 < n)) && board[row - 2, col - 1] == 'K') //Up
             {
-                return new List<string>() { "all" };
+                attack++;
             }
 
-            if (rightCaseUp)
+            if (((row + 2 >= 0 && row + 2 < n) && (col + 1 >= 0 && col + 1 < n)) && board[row + 2, col + 1] == 'K')
             {
-                whichIsCorrect.Add("rightUp");
-            }
-            if (rightCaseDown)
-            {
-                whichIsCorrect.Add("rightDown");
-            }
-            if (leftCaseUp)
-            {
-                whichIsCorrect.Add("leftUp");
-            }
-            if (leftCaseDown)
-            {
-                whichIsCorrect.Add("leftDown");
+                attack++;
             }
 
-            return whichIsCorrect;
-        }
-
-        static List<string> VerticalPatter(int n, int row, int col) //for one position
-        {
-            List<string> whichIsCorrect = new List<string>();
-
-            bool upCaseRight = (row + 2 >= 0 && row + 2 < n) &&
-                               (col + 1 >= 0 && col + 1 < n);
-
-            bool upCaseLeft = (row + 2 >= 0 && row + 2 < n) &&
-                              (col - 1 >= 0 && col - 1 < n);
-
-            bool downCaseRight = (row - 2 >= 0 && row - 2 < n) &&
-                                 (col + 1 >= 0 && col + 1 < n);
-
-            bool downCaseLeft = (row - 2 >= 0 && row - 2 < n) &&
-                                (col - 1 >= 0 && col - 1 < n);
-
-            if (upCaseRight && upCaseLeft && downCaseRight && downCaseLeft)
+            if (((row + 2 >= 0 && row + 2 < n) && (col - 1 >= 0 && col - 1 < n)) && board[row + 2, col - 1] == 'K') //Down
             {
-                return new List<string>() { "all" };
+                attack++;
             }
 
-            if (upCaseRight)
+            if (((row + 1 >= 0 && row + 1 < n) && (col + 2 >= 0 && col + 2 < n)) && board[row + 1, col + 2] == 'K')
             {
-                whichIsCorrect.Add("UpRight");
-            }
-            if (upCaseLeft)
-            {
-                whichIsCorrect.Add("UpLeft");
-            }
-            if (downCaseRight)
-            {
-                whichIsCorrect.Add("DownRight");
-            }
-            if (downCaseLeft)
-            {
-                whichIsCorrect.Add("DownLeft");
+                attack++;
             }
 
-            return whichIsCorrect;
+            if (((row - 1 >= 0 && row - 1 < n) && (col + 2 >= 0 && col + 2 < n)) && board[row - 1, col + 2] == 'K') // Left
+            {
+                attack++;
+            }
+
+            if (((row + 1 >= 0 && row + 1 < n) && (col - 2 >= 0 && col - 2 < n)) && board[row + 1, col - 2] == 'K')
+            {
+                attack++;
+            }
+
+            if (((row - 1 >= 0 && row - 1 < n) && (col - 2 >= 0 && col - 2 < n)) && board[row - 1, col - 2] == 'K') //right
+            {
+                attack++;
+            }
+
+            return attack;
         }
     }
 }
