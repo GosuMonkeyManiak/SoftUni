@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31005.135
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cooking", "Cooking\Cooking.csproj", "{BEE02158-6F9D-449B-B241-434FD469FC9A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Selling", "Selling\Selling.csproj", "{E535B768-75C1-4C21-BD97-8FB261CDDBF0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BakeryOpenning", "BakeryOpenning\BakeryOpenning.csproj", "{3AE953E4-0E5F-440B-8A2A-08DEB1F0A1D9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BEE02158-6F9D-449B-B241-434FD469FC9A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BEE02158-6F9D-449B-B241-434FD469FC9A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BEE02158-6F9D-449B-B241-434FD469FC9A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BEE02158-6F9D-449B-B241-434FD469FC9A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E535B768-75C1-4C21-BD97-8FB261CDDBF0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E535B768-75C1-4C21-BD97-8FB261CDDBF0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E535B768-75C1-4C21-BD97-8FB261CDDBF0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E535B768-75C1-4C21-BD97-8FB261CDDBF0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3AE953E4-0E5F-440B-8A2A-08DEB1F0A1D9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3AE953E4-0E5F-440B-8A2A-08DEB1F0A1D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3AE953E4-0E5F-440B-8A2A-08DEB1F0A1D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3AE953E4-0E5F-440B-8A2A-08DEB1F0A1D9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B882E42A-CAA9-4000-A923-8289866E3B02}
+	EndGlobalSection
+EndGlobal
