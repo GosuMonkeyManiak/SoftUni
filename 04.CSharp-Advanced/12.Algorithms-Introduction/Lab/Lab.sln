@@ -3,9 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31005.135
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RecursiveArraySum", "RecursiveArraySum\RecursiveArraySum.csproj", "{7BDB0477-1577-49A4-8F20-7F3765EC23FF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RecursiveArraySum", "RecursiveArraySum\RecursiveArraySum.csproj", "{7BDB0477-1577-49A4-8F20-7F3765EC23FF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RecursiveFactorial", "RecursiveFactorial\RecursiveFactorial.csproj", "{C44E0414-C67F-4FE8-8215-30723EDD0803}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RecursiveFactorial", "RecursiveFactorial\RecursiveFactorial.csproj", "{C44E0414-C67F-4FE8-8215-30723EDD0803}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SelectionSort", "SelectionSort\SelectionSort.csproj", "{3A5859F8-3F0E-47D5-9433-15D84FF74BA9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BubbleSort", "BubbleSort\BubbleSort.csproj", "{37396430-AD61-4D0B-9F1A-4B9A5ECE595E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +25,14 @@ Global
 		{C44E0414-C67F-4FE8-8215-30723EDD0803}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C44E0414-C67F-4FE8-8215-30723EDD0803}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C44E0414-C67F-4FE8-8215-30723EDD0803}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3A5859F8-3F0E-47D5-9433-15D84FF74BA9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3A5859F8-3F0E-47D5-9433-15D84FF74BA9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3A5859F8-3F0E-47D5-9433-15D84FF74BA9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3A5859F8-3F0E-47D5-9433-15D84FF74BA9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{37396430-AD61-4D0B-9F1A-4B9A5ECE595E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{37396430-AD61-4D0B-9F1A-4B9A5ECE595E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{37396430-AD61-4D0B-9F1A-4B9A5ECE595E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{37396430-AD61-4D0B-9F1A-4B9A5ECE595E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
