@@ -1,10 +1,12 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Text;
+using System.Linq;
 
 namespace GenericStack
 {
-    class CustomStack<T>
+    class CustomStack<T> : IEnumerable<T>
     {
         private const int InitialCapacity = 4;
         private T[] items;
@@ -55,14 +57,6 @@ namespace GenericStack
             return this.items[this.Count - 1];
         }
 
-        public void Foreach(Action<T> action)
-        {
-            for (int i = 0; i < this.Count; i++)
-            {
-                action(this.items[i]);
-            }
-        }
-
         private void Resize()
         {
             T[] copy = new T[this.items.Length * 2];
@@ -74,5 +68,15 @@ namespace GenericStack
 
             this.items = copy;
         }
+
+        public IEnumerator<T> GetEnumerator()
+        {
+            for (int i = this.Count - 1; i >= 0; i--)
+            {
+                yield return items[i];
+            }
+        }
+
+        IEnumerator IEnumerable.GetEnumerator() => GetEnumerator();
     }
 }
