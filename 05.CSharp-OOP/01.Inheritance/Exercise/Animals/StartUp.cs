@@ -16,8 +16,8 @@ namespace Animals
                 {
                     break;
                 }
-                string[] info = Console.ReadLine()
-                    .Split(" ", StringSplitOptions.RemoveEmptyEntries);
+                var info = Console.ReadLine()
+                    ?.Split(" ", StringSplitOptions.RemoveEmptyEntries);
 
 
                 if (string.IsNullOrEmpty(info[0]) ||
