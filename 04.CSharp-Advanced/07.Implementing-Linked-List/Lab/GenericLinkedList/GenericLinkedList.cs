@@ -10,6 +10,7 @@ namespace GenericLinkedList
         {
 
         }
+
         public Node<T> Head { get; set; }
 
         public Node<T> Tail { get; set; }
