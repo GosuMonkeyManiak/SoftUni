@@ -19,6 +19,7 @@ namespace MilitaryElite.Models
         {
             repairs = new List<IRepair>();
         }
+        
 
         public IReadOnlyCollection<IRepair> Repairs => repairs.AsReadOnly();
 
