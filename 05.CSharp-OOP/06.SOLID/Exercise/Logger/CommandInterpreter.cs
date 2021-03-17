@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 using System.Reflection;
 using Logger.AllReportLevels;
 using Logger.Appenders;
@@ -23,27 +24,25 @@ namespace Logger
                 IAppender currentAppender = null;
                 ILayout currentLayout = null;
 
-                if (parts[1] == nameof(SimpleLayout))
-                {
-                    currentLayout = new SimpleLayout();
-                }
-                else if (parts[1] == nameof(XmlLayout))
-                {
-                    currentLayout = new XmlLayout();
-                }
-                else if (parts[1] == nameof(HtmlLayout))
-                {
-                    currentLayout = new HtmlLayout();
-                }
+                var appendersType = Assembly.GetExecutingAssembly()
+                    .GetTypes()
+                    .Where(x => x.IsAssignableTo(typeof(IAppender)) && x.Name != nameof(IAppender))
+                    .ToList();
 
-                if (parts[0] == nameof(ConsoleAppender))
-                {
-                    currentAppender = new ConsoleAppender(currentLayout);
-                }
-                else if (parts[0] == nameof(FileAppender))
-                {
-                    currentAppender = new FileAppender(currentLayout, new LogFile());
-                }
+                var layoutTypes = Assembly.GetExecutingAssembly()
+                    .GetTypes()
+                    .Where(x => x.IsAssignableTo(typeof(ILayout)) && x.Name != nameof(ILayout))
+                    .ToList();
+
+                var appenderType = appendersType
+                    .FirstOrDefault(x => x.Name == parts[0]);
+
+                var layoutType = layoutTypes
+                    .FirstOrDefault(x => x.Name == parts[1]);
+
+                currentLayout = (ILayout)Activator.CreateInstance(layoutType);
+                currentAppender = (IAppender)Activator.CreateInstance(appenderType, new object[] { currentLayout });
+
 
                 if (parts.Length > 2)
                 {
