@@ -11,7 +11,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\DataBase\DataBase.csproj" />
+    <ProjectReference Include="..\FightingArena\FightingArena.csproj" />
   </ItemGroup>
 
 </Project>

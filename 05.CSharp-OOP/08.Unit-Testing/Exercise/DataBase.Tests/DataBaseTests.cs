@@ -3,17 +3,16 @@ using NUnit.Framework;
 
 namespace DataBase.Tests
 {
-    [TestFixture]
-    public class DataBaseTests
+    public class DatabaseTests
     {
-        private Database.DataBase dataBase;
+        private Database dataBase;
         private int[] elements;
 
         [SetUp]
         public void Setup()
         {
             elements = new[] { 1, 2, 3 };
-            dataBase = new Database.DataBase(elements);
+            dataBase = new Database(elements);
         }
 
         [Test]
@@ -40,7 +39,7 @@ namespace DataBase.Tests
 
             Assert.That(() =>
             {
-                dataBase = new Database.DataBase(elements);
+                dataBase = new Database(elements);
             }, Throws.InvalidOperationException.With.Message.EqualTo("Array's capacity must be exactly 16 integers!"));
         }
 
@@ -48,7 +47,7 @@ namespace DataBase.Tests
         public void When_AddMoreThen16Element_ShouldThrowException()
         {
             elements = new[] { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16 };
-            dataBase = new Database.DataBase(elements);
+            dataBase = new Database(elements);
 
             Assert.That(() =>
             {
@@ -76,7 +75,7 @@ namespace DataBase.Tests
         [Test]
         public void When_DoNotHaveMoreElementAndTryToRemove_ShouldThrowException()
         {
-            dataBase = new Database.DataBase(new int[0]);
+            dataBase = new Database(new int[0]);
 
             Assert.That(() =>
             {

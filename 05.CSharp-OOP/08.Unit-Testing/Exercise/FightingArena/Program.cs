@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace DataBase
+namespace FightingArena
 {
     class Program
     {

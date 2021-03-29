@@ -1,16 +1,14 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 
-namespace Database
+namespace DataBase
 {
-    public class DataBase
+    public class Database
     {
         private int[] data;
 
         private int count;
 
-        public DataBase(params int[] data)
+        public Database(params int[] data)
         {
             this.data = new int[16];
 
