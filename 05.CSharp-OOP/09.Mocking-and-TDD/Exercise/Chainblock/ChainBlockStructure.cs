@@ -21,7 +21,7 @@ namespace Chainblock
         {
             if (transactions.Any(t => t.Id == tx.Id))
             {
-                throw new ArgumentException("Transaction with this id already exist");
+                throw new ArgumentException("Transaction with this id already exist!");
             }
 
             transactions.Add(tx);
@@ -47,7 +47,7 @@ namespace Chainblock
         {
             if (transactions.Any(t => t.Id == id) == false)
             {
-                throw new InvalidOperationException("Transaction with that id already exist");
+                throw new InvalidOperationException("Transaction with that id already exist!");
             }
 
             int indexOfTransaction = transactions.FindIndex(t => t.Id == id);
@@ -59,7 +59,7 @@ namespace Chainblock
         {
             if (transactions.Any(t => t.Id == id) == false)
             {
-                throw new InvalidOperationException("Transaction with that id doesn't exist");
+                throw new InvalidOperationException("Transaction with that id doesn't exist!");
             }
 
             transactions.RemoveAll(t => t.Id == id);
@@ -69,7 +69,7 @@ namespace Chainblock
         {
             if (transactions.Any(t => t.Id == id) == false)
             {
-                throw new InvalidOperationException("Transaction with that id doesn't exist");
+                throw new InvalidOperationException("Transaction with that id doesn't exist!");
             }
 
             return transactions.First(t => t.Id == id);
@@ -79,7 +79,7 @@ namespace Chainblock
         {
             if (transactions.Any(t => t.Status == status) == false)
             {
-                throw new InvalidOperationException("Transaction with that status doesn't exist");
+                throw new InvalidOperationException("Transaction with that status doesn't exist!");
             }
 
             var sortedTransactions = transactions
@@ -93,7 +93,7 @@ namespace Chainblock
         {
             if (transactions.Any(t => t.Status == status) == false)
             {
-                throw new InvalidOperationException("Transactions with that status not exist.");
+                throw new InvalidOperationException("Transactions with that status not exist!");
             }
 
             List<string> senders = transactions
@@ -109,7 +109,7 @@ namespace Chainblock
         {
             if (transactions.Any(t => t.Status == status) == false)
             {
-                throw new InvalidOperationException("Transactions with that status not exist.");
+                throw new InvalidOperationException("Transactions with that status not exist!");
             }
 
 
@@ -131,42 +131,90 @@ namespace Chainblock
 
         public IEnumerable<ITransaction> GetBySenderOrderedByAmountDescending(string sender)
         {
-            throw new System.NotImplementedException();
+            if (transactions.Any(t => t.From == sender) == false)
+            {
+                throw new InvalidOperationException("Transaction with this senderd doesn't exist!");
+            }
+
+            return transactions
+                .Where(t => t.From == sender)
+                .OrderByDescending(t => t.Amount);
         }
 
         public IEnumerable<ITransaction> GetByReceiverOrderedByAmountThenById(string receiver)
         {
-            throw new System.NotImplementedException();
+            if (transactions.Any(t => t.To == receiver) == false)
+            {
+                throw new InvalidOperationException("Transaction with that receiver doesn't exist!");
+            }
+
+            return transactions
+                .Where(t => t.To == receiver)
+                .OrderByDescending(t => t.Amount)
+                .ThenBy(t => t.Id);
         }
 
         public IEnumerable<ITransaction> GetByTransactionStatusAndMaximumAmount(TransactionStatus status, double amount)
         {
-            throw new System.NotImplementedException();
+            List<ITransaction> sortedTransactions = transactions
+                .Where(t => t.Status == status)
+                .Where(t => t.Amount <= amount)
+                .OrderByDescending(t => t.Amount)
+                .ToList();
+
+            return sortedTransactions;
         }
 
         public IEnumerable<ITransaction> GetBySenderAndMinimumAmountDescending(string sender, double amount)
         {
-            throw new System.NotImplementedException();
+            if (transactions.Any(t => t.From == sender) == false)
+            {
+                throw new InvalidOperationException("Transaction with that sender doesn't exist!");
+            }
+
+            List<ITransaction> sortedTransactions = transactions
+                .Where(t => t.From == sender)
+                .Where(t => t.Amount > amount)
+                .OrderByDescending(t => t.Amount)
+                .ToList();
+
+            return sortedTransactions;
         }
 
         public IEnumerable<ITransaction> GetByReceiverAndAmountRange(string receiver, double lo, double hi)
         {
-            throw new System.NotImplementedException();
+            if (transactions.Any(t => t.To == receiver) == false)
+            {
+                throw new InvalidOperationException("Transaction with that receiver doesn't exist");
+            }
+
+            List<ITransaction> sortedTransactions = transactions
+                .Where(t => t.To == receiver)
+                .Where(t => t.Amount >= lo && t.Amount <= hi)
+                .OrderByDescending(t => t.Amount)
+                .ThenBy(t => t.Id)
+                .ToList();
+
+            return sortedTransactions;
         }
 
         public IEnumerable<ITransaction> GetAllInAmountRange(double lo, double hi)
         {
-            throw new System.NotImplementedException();
+            List<ITransaction> transactionsByAmountRange = transactions
+                .Where(t => t.Amount >= lo && t.Amount <= hi)
+                .ToList();
+
+            return transactionsByAmountRange;
         }
 
         public IEnumerator<ITransaction> GetEnumerator()
         {
-            throw new System.NotImplementedException();
+            for (int i = 0; i < Count; i++)
+            {
+                yield return transactions[i];
+            }
         }
 
-        IEnumerator IEnumerable.GetEnumerator()
-        {
-            return GetEnumerator();
-        }
+        IEnumerator IEnumerable.GetEnumerator() => GetEnumerator();
     }
 }
