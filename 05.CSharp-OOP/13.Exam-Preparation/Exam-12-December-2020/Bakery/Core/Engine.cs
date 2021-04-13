@@ -20,7 +20,7 @@ namespace Bakery.Core
 
         public void Run()
         {
-            string input = Console.ReadLine();
+            string input = reader.ReadLine();
 
             while (input != "END")
             {
@@ -105,6 +105,7 @@ namespace Bakery.Core
                 {
                     writer.WriteLine(ae.Message);
                 }
+
                 input = reader.ReadLine();
             }
         }
