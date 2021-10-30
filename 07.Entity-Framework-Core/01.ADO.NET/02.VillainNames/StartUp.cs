@@ -7,10 +7,7 @@ namespace _02.VillainNames
     {
         static void Main(string[] args)
         {
-            string connectionString = @"Server=.;
-                                        Database=MinionsDB;
-                                        User Id=sa;
-                                        Password=Mitko875486123;";
+            string connectionString = @"";
 
             SqlConnection connection = new SqlConnection(connectionString);
             connection.Open();

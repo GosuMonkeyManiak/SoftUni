@@ -10,10 +10,7 @@ namespace _01.InitialSetup
             //Server=.;Database=master;User Id=sa;Password=Mitko875486123;
 
             using (SqlConnection connection = new SqlConnection(
-                    @"Server=.;
-                      Database=master;
-                      User Id=sa;
-                      Password=Mitko875486123;"
+                    @""
                 ))
             {
                 connection.Open();

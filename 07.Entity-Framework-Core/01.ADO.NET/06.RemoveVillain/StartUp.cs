@@ -7,10 +7,7 @@ namespace _06.RemoveVillain
     {
         static void Main(string[] args)
         {
-            string connectionString = @"Server=.;
-                                        Database=MinionsDB;
-                                        User Id=sa;
-                                        Password=Mitko875486123;";
+            string connectionString = @"";
 
             int villainId = int.Parse(Console.ReadLine());
 

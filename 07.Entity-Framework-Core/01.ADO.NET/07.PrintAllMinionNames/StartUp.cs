@@ -8,10 +8,7 @@ namespace _07.PrintAllMinionNames
     {
         static void Main(string[] args)
         {
-            string connectionString = @"Server=.;
-                                        Database=MinionsDB;
-                                        User Id=sa;
-                                        Password=Mitko875486123;";
+            string connectionString = @"";
 
             List<string> minionNames = new List<string>();
 

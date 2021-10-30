@@ -7,10 +7,7 @@ namespace _04.AddMinion
     {
         static void Main(string[] args)
         {
-            string connectionString = @"Server=.;
-                                        Database=MinionsDB;
-                                        User Id=sa;
-                                        Password=Mitko875486123;";
+            string connectionString = @"";
 
             string[] minionInfo = Console.ReadLine()
                 .Split(" ", StringSplitOptions.RemoveEmptyEntries);

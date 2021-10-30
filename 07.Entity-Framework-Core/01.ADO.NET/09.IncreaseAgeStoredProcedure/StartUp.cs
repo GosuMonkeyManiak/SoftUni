@@ -7,10 +7,7 @@ namespace _09.IncreaseAgeStoredProcedure
     {
         static void Main(string[] args)
         {
-            string connectionString = @"Server=.;
-                                        Database=MinionsDB;
-                                        User Id=sa;
-                                        Password=Mitko875486123;";
+            string connectionString = @";";
 
             int minionId = int.Parse(Console.ReadLine());
 

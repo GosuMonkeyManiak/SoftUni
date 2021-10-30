@@ -9,10 +9,7 @@ namespace _08.IncreaseMinionAge
     {
         static void Main(string[] args)
         {
-            string connectionString = @"Server=.;
-                                        Database=MinionsDB;
-                                        User Id=sa;
-                                        Password=Mitko875486123;";
+            string connectionString = @";";
 
             int[] minionsIds = Console.ReadLine()
                 .Split(" ", StringSplitOptions.RemoveEmptyEntries)
