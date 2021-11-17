@@ -1,11 +1,18 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using System.ComponentModel.DataAnnotations;
 
 namespace CarDealer.Models
 {
     public class Customer
     {
+        public Customer()
+        {
+            Sales = new HashSet<Sale>();
+        }
+
+        [Key]
         public int Id { get; set; }
 
         public string Name { get; set; }

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 
@@ -7,6 +8,14 @@ namespace CarDealer.Models
 {
     public class Car
     {
+        public Car()
+        {
+            Sales = new HashSet<Sale>();
+            PartCars = new HashSet<PartCar>();
+
+        }
+
+        [Key]
         public int Id { get; set; }
 
         public string Make { get; set; }
@@ -17,6 +26,6 @@ namespace CarDealer.Models
 
         public ICollection<Sale> Sales { get; set; }
 
-        public ICollection<PartCar> PartCars { get; set; } = new List<PartCar>();
+        public ICollection<PartCar> PartCars { get; set; }
     }
 }
