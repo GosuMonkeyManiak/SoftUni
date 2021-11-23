@@ -108,13 +108,7 @@ namespace ProductShop
         public static string ImportCategoryProducts(ProductShopContext context, string inputJson)
         {
             var inputCategoryProducts = JsonConvert.DeserializeObject<IEnumerable<CategoryProductInputDto>>(inputJson);
-
-            var config = new MapperConfiguration(cfg =>
-            {
-                cfg.AddProfile<ProductShopProfile>();
-            });
-            var mapper = config.CreateMapper();
-
+            
             List<CategoryProduct> categoryProducts = new List<CategoryProduct>(inputCategoryProducts.Count());
 
             foreach (var inputCategoryProduct in inputCategoryProducts)
@@ -131,12 +125,6 @@ namespace ProductShop
 
         public static string GetProductsInRange(ProductShopContext context)
         {
-            var config = new MapperConfiguration(cfg =>
-            {
-                cfg.AddProfile<ProductShopProfile>();
-            });
-            var mapper = config.CreateMapper();
-
             var productInRange = context.Products
                 .Include(s => s.Seller)
                 .Where(p => p.Price > 500 && p.Price <= 1000)
@@ -169,23 +157,6 @@ namespace ProductShop
 
         public static string GetCategoriesByProductsCount(ProductShopContext context)
         {
-            var config = new MapperConfiguration(cfg =>
-            {
-                cfg.AddProfile<ProductShopProfile>();
-            });
-            var mapper = config.CreateMapper();
-
-            var resolver = new DefaultContractResolver()
-            {
-                NamingStrategy = new CamelCaseNamingStrategy()
-            };
-
-            var jsonSettings = new JsonSerializerSettings()
-            {
-                ContractResolver = resolver,
-                Formatting = Formatting.Indented
-            };
-
             var categoriesByProductCount = context.Categories
                 .Include(c => c.CategoryProducts)
                 .ThenInclude(cp => cp.Product)
