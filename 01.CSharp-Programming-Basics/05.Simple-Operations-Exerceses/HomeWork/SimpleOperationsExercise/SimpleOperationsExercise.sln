@@ -1,19 +1,21 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.29905.134
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.32112.339
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FromUSBToBGN", "FromUSBToBGN\FromUSBToBGN.csproj", "{BB716E7E-D34F-4378-AF68-55214DC69A2D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FromUSBToBGN", "FromUSBToBGN\FromUSBToBGN.csproj", "{BB716E7E-D34F-4378-AF68-55214DC69A2D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FromRadiansToDegrees", "FromRadiansToDegrees\FromRadiansToDegrees.csproj", "{B7E33FC5-2501-49C4-8B89-78B507F6D03D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FromRadiansToDegrees", "FromRadiansToDegrees\FromRadiansToDegrees.csproj", "{B7E33FC5-2501-49C4-8B89-78B507F6D03D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2DRectangleArea", "2DRectangleArea\2DRectangleArea.csproj", "{0BDCA161-BEEB-4236-B01B-F40EADBCF1C4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "2DRectangleArea", "2DRectangleArea\2DRectangleArea.csproj", "{0BDCA161-BEEB-4236-B01B-F40EADBCF1C4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TailoringWorkshop", "TailoringWorkshop\TailoringWorkshop.csproj", "{B518E78C-7448-4DBB-A258-B3A14F0E91F6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TailoringWorkshop", "TailoringWorkshop\TailoringWorkshop.csproj", "{B518E78C-7448-4DBB-A258-B3A14F0E91F6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DanceHall", "DanceHall\DanceHall.csproj", "{32555E37-C003-45E5-B3BC-E8859C9DF4AA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DanceHall", "DanceHall\DanceHall.csproj", "{32555E37-C003-45E5-B3BC-E8859C9DF4AA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CharityCampaign", "CharityCampaign\CharityCampaign.csproj", "{60648C9A-C04A-439E-8E9E-14E4354EB097}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CharityCampaign", "CharityCampaign\CharityCampaign.csproj", "{60648C9A-C04A-439E-8E9E-14E4354EB097}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AlcoholMarket", "AlcoholMarket\AlcoholMarket.csproj", "{E4765267-19E9-4B4E-B9F1-29C5D819C568}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +47,10 @@ Global
 		{60648C9A-C04A-439E-8E9E-14E4354EB097}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{60648C9A-C04A-439E-8E9E-14E4354EB097}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{60648C9A-C04A-439E-8E9E-14E4354EB097}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E4765267-19E9-4B4E-B9F1-29C5D819C568}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E4765267-19E9-4B4E-B9F1-29C5D819C568}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E4765267-19E9-4B4E-B9F1-29C5D819C568}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E4765267-19E9-4B4E-B9F1-29C5D819C568}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
