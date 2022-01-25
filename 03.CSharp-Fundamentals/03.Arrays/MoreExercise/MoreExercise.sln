@@ -1,15 +1,17 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.30523.141
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.32112.339
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EncryptSortAndPrint", "EncryptSortAndPrint\EncryptSortAndPrint.csproj", "{6A39EF2E-C1F0-41F8-99D2-2D660343E396}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PascalTriangle", "PascalTriangle\PascalTriangle.csproj", "{C4259AD4-291F-4B69-B951-AC95FD4104CC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RecursiveFibonacci", "RecursiveFibonacci\RecursiveFibonacci.csproj", "{E24411C2-823D-4400-AFEB-1AE63BBBE331}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RecursiveFibonacci", "RecursiveFibonacci\RecursiveFibonacci.csproj", "{E24411C2-823D-4400-AFEB-1AE63BBBE331}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FoldAndSum", "FoldAndSum\FoldAndSum.csproj", "{8D8BF2BE-8F2C-422A-B243-00FA5E4D07BB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FoldAndSum", "FoldAndSum\FoldAndSum.csproj", "{8D8BF2BE-8F2C-422A-B243-00FA5E4D07BB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LongestIncreasingSubsqeuence", "LongestIncreasingSubsqeuence\LongestIncreasingSubsqeuence.csproj", "{7CFC35B1-E307-4F64-9245-8FE890D5219E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{8D8BF2BE-8F2C-422A-B243-00FA5E4D07BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8D8BF2BE-8F2C-422A-B243-00FA5E4D07BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8D8BF2BE-8F2C-422A-B243-00FA5E4D07BB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7CFC35B1-E307-4F64-9245-8FE890D5219E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7CFC35B1-E307-4F64-9245-8FE890D5219E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7CFC35B1-E307-4F64-9245-8FE890D5219E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7CFC35B1-E307-4F64-9245-8FE890D5219E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
