@@ -3,6 +3,6 @@
     public class DatabaseConfiguration
     {
         public const string ConnectionString =
-            @"Server=.;Database=SharedTrip;User Id=sa;Password=Mitko875486123;";
+            @"Server=.;Database=SharedTrip;Trusted_Connection=True;";
     }
 }

@@ -3,6 +3,6 @@
     public class DatabaseConfiguration
     {
         public const string ConnectionString =
-            @"Server=.;Database=SMS;User Id=sa;Password=Mitko875486123";
+            @"Server=.;Database=SMS;Trusted_Connection=True;";
     }
 }
