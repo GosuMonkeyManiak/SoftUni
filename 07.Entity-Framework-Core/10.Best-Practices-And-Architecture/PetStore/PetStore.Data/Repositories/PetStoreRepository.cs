@@ -30,6 +30,11 @@
             return this.DbSet.AddAsync(entity).AsTask();
         }
 
+        public Task FirstOrDefaultAsync(Expression<Func<TEntity, bool>> condition)
+        {
+            return this.DbSet.FirstOrDefaultAsync(condition);
+        }
+
         public IQueryable<TEntity> Where(Expression<Func<TEntity, bool>> condition)
         {
             return this.DbSet.Where(condition);

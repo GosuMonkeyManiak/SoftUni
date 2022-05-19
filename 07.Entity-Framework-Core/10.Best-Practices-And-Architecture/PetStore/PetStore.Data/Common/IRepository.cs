@@ -15,6 +15,8 @@
 
         Task AddAsync(TEntity entity);
 
+        Task FirstOrDefaultAsync(Expression<Func<TEntity, bool>> condition);
+
         Task<List<TEntity>> ToListAsync();
 
         Task<int> SaveChangesAsync();

@@ -35,7 +35,7 @@
 
             User user = usersRepository
                 .AllAsNoTracking()
-                .SingleOrDefault(u => u.UserName == userToFind.UserName);
+                .SingleOrDefault(u => u.UserName == userToFind.UserName && u.Password == userToFind.Password);
 
             if (user != null)
             {
