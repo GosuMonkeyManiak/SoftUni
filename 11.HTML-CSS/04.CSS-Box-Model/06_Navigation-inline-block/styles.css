@@ -1,0 +1,30 @@
+html {
+    font-family: Helvetica, sans-serif;
+}
+
+body {
+    padding: 60px;
+}
+
+header {
+    border-bottom: 2px solid black;
+}
+
+header h1 {
+    display: inline-block;
+}
+
+nav {
+    display: inline-block;
+    margin-left: 50px;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #1B9A1B;
+}
