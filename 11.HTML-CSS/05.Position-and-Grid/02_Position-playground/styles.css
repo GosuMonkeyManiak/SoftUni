@@ -1,0 +1,28 @@
+body {
+    margin: 0px;
+}
+
+.viewport {
+    height: 50vh;
+    position: relative;
+}
+
+.viewport .card {
+    position: absolute;
+    display: block;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 200px;
+}
+
+.viewport .card img {
+    width: 100%;
+}
+
+.viewport .card i {
+    position: absolute;
+    color: white;
+    bottom: 10px;
+    right: 10px;
+}

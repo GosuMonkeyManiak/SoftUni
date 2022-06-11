@@ -1,0 +1,32 @@
+body {
+    background-color: rgb(238, 238, 238);
+}
+
+section.card {
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 6px;
+}
+
+section.card img {
+    width: 100%;
+    position: absolute;
+}
+
+div:first-child {}
+
+div:last-child {
+    margin: 0px 10px 20px 10px;
+}
+
+.card a {
+    background-color: rgb(0, 153, 0);
+    text-decoration: none;
+    color: white;
+    padding: 6px 12px;
+    border-radius: 4px;
+    display: inline-block;
+}
