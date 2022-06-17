@@ -1,0 +1,28 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px;
+}
+
+section ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-content: space-between;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+section ul li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 9px solid black;
+    flex-basis: 220px;
+}
+
+section ul li img {
+    width: 100%;
+    padding: 20px 10px;
+}

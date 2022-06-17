@@ -1,0 +1,33 @@
+body {
+    background-color: rgb(238, 238, 238);
+}
+
+.cards-layout.flex {
+    display: flex;
+    justify-content: space-between;
+    align-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 20px;
+}
+
+.card {
+    border: 2px solid gray;
+    border-radius: 5px;
+    background-color: #fff;
+    width: 20%;
+}
+
+.card img {
+    width: 100%;
+    padding: 0px;
+}
+
+.card section {
+    padding: 10px 20px;
+}
+
+.card footer {
+    border-top: 1px solid gray;
+    padding: 10px 20px;
+    margin-top: auto;
+}

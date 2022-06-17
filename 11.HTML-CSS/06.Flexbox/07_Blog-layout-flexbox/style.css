@@ -1,0 +1,77 @@
+body {
+    padding: 40px;
+    background-color: rgb(238, 238, 238);
+}
+
+h1,
+h2 {
+    font-family: Georgia, serif;
+}
+
+.page {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.page>header {
+    width: 100%;
+    border-bottom: 2px solid black;
+}
+
+.page>header p {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.page main {
+    display: flex;
+    width: 60%;
+}
+
+.page main article section img:nth-child(1) {
+    float: right;
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+    margin-left: 15px;
+    margin-bottom: 15px;
+    border: 3px solid black;
+    -webkit-box-shadow: 0px 0px 15px -5px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 0px 15px -5px rgba(0, 0, 0, 0.25);
+}
+
+.page main article section img:nth-child(2) {
+    float: left;
+    background-color: rgb(255, 255, 255);
+    border: 3px solid black;
+    padding: 10px;
+    margin-right: 15px;
+    margin-bottom: 15px;
+    -webkit-box-shadow: 0px 0px 15px -5px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 0px 15px -5px rgba(0, 0, 0, 0.25);
+}
+
+.page main article section:nth-child(3) p:nth-child(3) {
+    display: inline-block;
+    width: 50%;
+}
+
+.page main article section blockquote {
+    display: inline-block;
+    width: 40%;
+    font-family: Georgia, serif;
+    border-left: 1px solid gray;
+    padding: 10px;
+}
+
+.page aside {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+}
+
+.page aside ul li a {
+    color: rgb(0, 153, 0);
+    text-decoration: none;
+}
