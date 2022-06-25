@@ -1,0 +1,28 @@
+input {
+    border: 1px solid #E7E7E7;
+    border-radius: 3px;
+}
+
+.input-field {
+    margin: 10px 10px;
+    font-weight: bold;
+}
+
+.input-field:nth-child(2) label {
+    padding-right: 3px;
+}
+
+form {
+    background-color: #F8F8F8;
+    width: 300px;
+    border: 1px solid #BABABA;
+}
+
+form button {
+    background-color: #2D2D2D;
+    color: white;
+    font-weight: bold;
+    border-radius: 3px;
+    padding: 3px 10px;
+    margin: 10px 10px 20px 10px;
+}

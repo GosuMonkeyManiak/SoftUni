@@ -1,0 +1,63 @@
+body {
+    background-color: white;
+}
+
+body>header {
+    display: flex;
+    justify-content: space-around;
+    margin: 0px 250px;
+}
+
+body>header h1 {
+    width: 45vw;
+    display: inline-block;
+    color: #7D007C;
+}
+
+body>header nav {
+    width: 45vw;
+    display: inline-block;
+}
+
+body>header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+body>header nav ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+main section:nth-child(1) {
+    display: flex;
+    justify-content: space-around;
+    margin: 100px 250px;
+}
+
+main section:nth-child(1) div {
+    width: 50%;
+}
+
+main section:nth-child(1) div p {
+    margin: 20px 0px;
+}
+
+main section:nth-child(1) div button {
+    background-color: white;
+    border: 1px solid black;
+    color: black;
+    border-radius: 5px;
+    padding: 2px 15px;
+    cursor: pointer;
+}
+
+main section:nth-child(1) img {
+    width: 15%;
+    margin-right: 220px;
+}
+
+main section:nth-child(2) header {
+    text-align: center;
+}
