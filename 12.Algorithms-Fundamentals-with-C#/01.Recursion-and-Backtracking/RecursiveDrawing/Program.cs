@@ -2,9 +2,16 @@
 {
     using System;
 
-    public class Program
+    class Program
     {
-        public static void Print(int n)
+        static void Main(string[] args)
+        {
+            int n = int.Parse(Console.ReadLine());
+
+            DrawFigure(n);
+        }
+
+        public static void DrawFigure(int n)
         {
             if (n == 0)
             {
@@ -13,16 +20,9 @@
 
             Console.WriteLine(new string('*', n));
 
-            Print(n - 1);
+            DrawFigure(n - 1);
 
             Console.WriteLine(new string('#', n));
-        }
-
-        public static void Main()
-        {
-            int n = int.Parse(Console.ReadLine());
-
-            Print(n);
         }
     }
 }
