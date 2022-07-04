@@ -1,0 +1,43 @@
+@media (max-width: 600px) {
+    body {
+        margin: unset;
+    }
+
+    main {
+        margin: unset;
+        width: 100%;
+    }
+
+    .left-to-right:first-child {
+        padding: unset;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    main .left-to-right article {
+        border-radius: 20%;
+        padding: 0px 20px;
+    }
+
+    main .left-to-right article button {
+        display: none;
+    }
+
+    main section:nth-child(2),
+    main section:nth-child(4) {
+        flex-direction: column;
+    }
+
+    main section:nth-child(2) button {
+        display: none;
+    }
+
+    main section:nth-child(4) article {
+        margin-left: 15%;
+    }
+
+    main section.left-to-right:nth-child(3) {
+        padding: 60px;
+    }
+}

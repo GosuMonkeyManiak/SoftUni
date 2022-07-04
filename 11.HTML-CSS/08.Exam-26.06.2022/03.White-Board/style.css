@@ -1,0 +1,13 @@
+section:nth-child(1) {
+    display: flex;
+    gap: 50px;
+}
+
+section:nth-child(1) img {
+    width: 50%;
+    height: 30%;
+}
+
+section:nth-child(1) div {
+    padding: 20px 30px;
+}
