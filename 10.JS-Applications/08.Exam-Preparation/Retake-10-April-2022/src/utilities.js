@@ -18,7 +18,7 @@ function createIntialSubmitFunction(actualEventCallBack) {
         event.preventDefault();
 
         let formData = new FormData(event.currentTarget);
-        let data = [...formData.entries()].reduce((p, [k, v]) => Object.assign(p, { [k]: v }), {});
+        let data = Object.fromEntries(formData.entries());
 
         for (const key in data) {
             data[key].trim();
