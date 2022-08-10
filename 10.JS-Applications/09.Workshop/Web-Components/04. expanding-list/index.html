@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Expanding List - Component</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="/app.js"></script>
+</head>
+<body>
+    <h1>Global Restaurants (Expanding List)</h1>
+    <ul is="expanding-list">
+
+        <li class="open">Bulgaria
+            <ul is="expanding-list">
+                <li class="open">Sofia
+                    <ul is="expanding-list">
+                        <li class="open">Mladost
+                            <ul is="expanding-list">
+                                <li class="open">Verdana Restaurant</li>
+                                <li class="open">Grill House BBQ & Pizza</li>
+                                <li class="open">House of cypress</li>
+                            </ul>
+                        </li>
+                        <li class="open">Druzhba</li>
+                        <li class="open">Vitosha</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+
+        <li class="open">France
+
+            <ul is="expanding-list">
+                <li class="open">Paris
+
+                    <ul is="expanding-list">
+                        <li class="open">
+                            Ternes
+
+                            <ul is="expanding-list">
+                                <li class="open">Rech</li>
+                                <li class="open">Gabylou</li>
+                                <li class="open">Fait Maison</li>
+                            </ul>
+                            
+                        </li>
+                        <li class="open">ST Blaise</li>
+                        <li class="open">Picpus</li>
+                    </ul>
+
+                </li>
+                <li class="open">Lyon</li>
+                <li class="open">Marselle</li>
+            </ul>
+
+        </li>
+    </ul>
+    
+    <ul is="expanding-list">
+        <li class="open">
+            Sofia
+            <button></button>
+        </li>
+        <li>an</li>
+        <li>expanding</li>
+        <li>list</li>
+    </ul>
+</body>
+</html>
